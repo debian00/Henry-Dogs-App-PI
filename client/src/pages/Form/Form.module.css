@@ -1,0 +1,313 @@
+@import url('https://fonts.cdnfonts.com/css/avenir');
+
+form {
+  font-family: 'Avenir', sans-serif; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Agrega esta línea para centrar verticalmente */
+  color: #EEC34E;
+  backdrop-filter: blur(1px) saturate(180%);
+  -webkit-backdrop-filter: blur(1px) saturate(180%);
+  background-color: rgba(0, 0, 0, 0.322);  
+  width: 100%;
+  min-height: 100vh; /* Asegura que el contenedor sea al menos del alto de la pantalla */
+  background-image: url("../../assets/FormBg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.successMessage {
+  color: #ffffff;
+  background-color: #7DDF7C;
+  font-family: 'Source Sans Pro', sans-serif;
+  border-radius:.5em;
+  border: 1px solid;
+  margin: 10px 0px;
+  padding:12px;
+ width: 400px;
+}
+.back {
+  text-align: left;
+  width: 100%;
+}
+.backBtn {
+font-family: 'Avenir', sans-serif;
+padding: 20px 50px;
+display: flex;
+flex-direction: row;
+border: 0;
+text-decoration: none;
+border-radius: 5px;
+background-color: rgba(32, 32, 32, 0.342);
+border: 1px solid rgb(146, 37, 173);
+-webkit-backdrop-filter: blur(2px);
+backdrop-filter: blur(2px);
+color: #EEC34E;
+font-size: 1.5em;
+letter-spacing: 2px;
+cursor: pointer;
+text-transform: uppercase;
+width: auto;
+text-align: center;
+}
+.backBtn:hover {
+  background-color: rgb(224, 196, 148);
+  font-weight: bold;
+}
+.backBtn:active {
+  position: relative;
+  top: 2px;
+}
+.NavLink a{
+  text-decoration: none;
+}
+
+.box {
+  display: flex;  
+  justify-content: center;
+  text-align: center;
+  width: 250px;
+}
+
+.inputForm {
+  width: auto;
+  margin: 5px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.3s ease;
+  font-size: 16px;
+  padding-left: 3px;
+  border: 2px solid rgb(146, 37, 173);
+}
+.inputForm:hover {
+  border: 2px solid;
+  color: rgb(146, 37, 173);
+}
+
+.inputForm[name="name"] {
+  width: auto;
+  display: flex; 
+}
+
+.inputForm[name="image"] {
+  width: 240px;
+}
+
+.inputForm[type="checkbox"] {
+  width: 20px;
+  margin: 8px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.formLabel {
+  font-size: 4em;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+.inputImage {
+  display: flex;
+  flex-direction: column;
+  margin: 2.3rem 2.3rem;
+}
+
+.inputImage input {
+  font-size: 13px;
+  padding: 4px;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px 3px rgba(0, 0,0, 0.15);
+  color: rgb(200, 169, 54);
+  font-weight: 100;
+}
+
+.inputImage img {
+  width: 270px;
+  align-self: center;
+  height: auto;
+  margin-top: 1.2rem;
+  border-radius: 15px;
+  border: 2px solid white;
+  transition: border 0.2s ease;
+  font-weight: 100;
+}
+.inputImage img:hover {
+  border: 2px solid rgb(200, 169, 54);
+}
+
+.temperaments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.temperaments strong {
+  font-size: 1.3rem;
+  margin: 1.3rem 0 1.3rem;
+}
+
+.temperaments div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  width: 70%;
+  background-color: rgb(146, 37, 173);
+  border-radius: 10px;
+  scroll-snap-align: start;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  border: 2px solid rgb(146, 37, 173);
+  padding: 10px;
+  transition: border 0.2s ease;
+}
+.section:hover {
+  border: 2px solid rgb(200, 169, 54); 
+}
+
+.section::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 15px;
+  background-color: rgba(252, 182, 53, 0.5);
+  border-radius: 10px;
+}
+
+.section::-webkit-scrollbar-thumb {
+  background-color: #E6B325;
+  border-radius: 20px;
+  border: 2px solid #f1f2f3;
+  height: 30px;
+}
+
+.section div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.button {
+  font-family: 'Avenir', sans-serif; 
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: row;
+  border: 0;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: rgba(32, 32, 32, 0.342);
+  border: 1px solid rgb(146, 37, 173);
+  backdrop-filter: blur(2px);
+  color:#EEC34E;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: auto;
+  text-align: center;
+}
+.button:hover {
+  background: rgb(224, 196, 148);
+  background: linear-gradient(
+    0deg,
+    rgba(224, 196, 148, 1) 0%,
+    rgb(204, 167, 102) 100%
+  );
+  cursor: pointer;
+}
+
+.error {
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  color: rgb(255, 3, 3);
+  transition: 0.5s ease;
+  margin-top: 10px;
+}
+
+.warning {
+  border-radius: 5px;
+  outline: none;
+  transition: 0.3s ease;
+  font-size: 16px;
+  border: 2px solid rgb(255, 3, 3);
+}
+.number {
+  width: 60px;
+}
+
+.warningNumber {
+  width: 60px;
+  margin: 15px;
+  height: 30px;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.3s ease;
+  font-size: 16px;
+  border: 2px solid rgb(255, 3, 3);
+}
+
+@media (min-width: 768px) {
+  .error {
+    font-size: 1rem;
+  }
+  .box {
+    flex-direction: column;
+  }
+  .contenedor {
+    display: flex;
+  }
+  .inputForm {
+    width: auto;      
+    text-transform: none;
+  }
+  .inputForm[name="name"] {
+    min-width: 375px;
+  }
+
+  .inputForm[name="image"] {
+    min-width: 375px;
+  }
+  .inputForm[type="checkbox"] {
+    width: 30px;
+    margin: 10px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .section {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 375px;
+    background-color: rgba(32, 32, 32, 0.342);
+    border-radius: 10px;
+    scroll-snap-align: start;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    border: 2px solid rgb(146, 37, 173);
+    padding: 10px;
+  }
+   .loadinput[type=file]::file-selector-button {
+    margin-right: 20px;
+  border: none;
+  background:rgba(32, 32, 32, 0.342);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1.2em;
+  color: #EEC34E;
+  cursor: pointer;
+  transition: background .2s ease-in-out;
+  }
+  
+
+  .inputImage
+  .inputImage img {
+    width: auto;
+  }
+}

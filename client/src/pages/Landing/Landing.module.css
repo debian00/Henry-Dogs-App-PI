@@ -1,0 +1,70 @@
+@import url('https://fonts.cdnfonts.com/css/avenir');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Avenir', sans-serif; 
+}
+
+.maincontainer{  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Toma el 100% de la altura de la ventana */
+  background-image: url("../../assets/landbg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.buttoncontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.title{
+  font-size: 7em;
+  color: #EEC34E; /* Color del texto */
+  text-align: center;
+  margin: 0;
+  padding: 1rem;
+}
+  
+.subcontainer{
+  height: 100%;
+  width: 100%;
+
+
+}
+.glassbtn {
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  border-style: solid;
+  border-color: #CE4293;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5); /* Color de fondo semi-transparente */
+  color: #EEC34E; /* Color del texto */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.navlink{
+  text-decoration: none;
+  text-align: center;
+
+}
+.glassbtn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #CE4293;
+  text-decoration: none;
+
+}
+
+.title h1{
+padding-left: 20px;
+padding-right: 20px;
+
+  }
+

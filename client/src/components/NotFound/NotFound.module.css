@@ -1,0 +1,17 @@
+.notFoundImageContainer {
+    width: 100%; /* La imagen ocupará el 100% del ancho disponible */
+    height: 100dvh; /* La altura se ajustará automáticamente para mantener la proporción original */
+    max-height: 100vh; /* Limita la altura máxima al 100% del alto de la ventana */
+    display: block; /* Asegura que la imagen se comporte como un elemento de bloque */
+    margin: 0 auto; /* Centra horizontalmente la imagen */
+    background-image: url("../../assets/404.jpg");
+  }
+  .notFoundImageContainer img {
+
+    width: 100%; /* La imagen ocupará el 100% del ancho disponible */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción original */
+    max-height: 100vh; /* Limita la altura máxima al 100% del alto de la ventana */
+    display: block; /* Asegura que la imagen se comporte como un elemento de bloque */
+    margin: 0 auto;
+
+  }

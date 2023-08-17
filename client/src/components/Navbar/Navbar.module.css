@@ -1,0 +1,38 @@
+
+.navcont{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 auto; /* Centrar horizontalmente */ 
+  background: rgb(2,0,36);
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(113,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+
+.header {
+  text-align: center;
+  display: contents;
+  background-color: #CE4293;
+  width:100%;
+  background-color: transparent;
+  
+}
+.glassbtn,
+.navlink {
+  text-decoration: none;
+  width: fit-content;
+  padding: 10px 20px; /* Ajustar el relleno */
+}
+.glassbtn:hover {
+  background-color: rgba(255,255,255,0.2);
+  color: #CE4293;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center; /* Centrar elementos en pantallas pequeñas */
+    padding: 10px; /* Ajustar el espaciado en pantallas pequeñas */
+    background-color: #CE4293;
+  }
+}

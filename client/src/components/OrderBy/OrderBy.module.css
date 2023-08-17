@@ -1,0 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.cdnfonts.com/css/avenir');
+.orderContainer {
+  font-family: 'Avenir', sans-serif; 
+  display: flex;
+  flex-direction: column;  
+  padding: 10px 20px;
+  border: 0;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid rgb(146, 37, 173);
+  backdrop-filter: blur(2px);
+  color:#EEC34E;
+  font-size: 14px;
+  text-transform: uppercase;
+  width: auto;
+  text-align: center;
+  height: auto;
+  
+}
+
+.orderContainer select {
+
+  /* Personalize */
+  background-color: rgba(32, 32, 32, 0.342);
+  border: 1px solid rgb(146, 37, 173);
+  backdrop-filter: blur(2px);
+  color:#EEC34E;
+}
+
+.orderContainer select option{
+  background-color: rgba(32, 32, 32, 0.342);
+  border: 1px solid #EEC34E;
+  backdrop-filter: blur(2px);
+  color:#EEC34E;
+
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+  background-color: rgba(32, 32, 32, 0.342);
+}
+/* Custom Select wrapper */
+.select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  border-radius: .25em;
+  overflow: hidden;
+  background-color: rgba(32, 32, 32, 0.342);
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  background-color: rgba(32, 32, 32, 0.342);
+  border: 1px solid #EEC34E;
+  backdrop-filter: blur(2px);
+  color:#EEC34E;
+  transition: .25s all ease;
+  pointer-events: none;
+}
+/* Transition */
+.select:hover::after {
+  color: #EEC34E;
+}
+
+
+
+.container {
+  position : absolute;
+  top: 50%;
+  left : 50%;
+  transform :
+  translate(-50%,-50%); 
+}
+.orderContainer span {
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .orderContainer {
+    width: 185px;
+  }
+}

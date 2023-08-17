@@ -1,0 +1,53 @@
+@import url('https://fonts.cdnfonts.com/css/avenir');
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  background-color: rgba(32, 32, 32, 0.342);
+  background-image: url("../../assets/homebgd.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  text-align: left;
+  margin: 0;
+  text-decoration: none;
+  padding-left: 20px;
+}
+
+.btn {
+  font-family: 'Avenir', sans-serif; 
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: row;
+  border: 0;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: rgba(32, 32, 32, 0.342);
+  border: 1px solid rgb(146, 37, 173);
+  backdrop-filter: blur(2px);
+  color:#EEC34E;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: auto;
+  text-align: center;
+  text-decoration: none;
+}
+.buttoncontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem; /* Espacio entre el h1 y el botón */
+}
+.orderFilter{
+border-style: solid;
+border: 2px;
+border-color: #EEC34E;
+
+  display: flex;
+}

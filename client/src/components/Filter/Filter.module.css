@@ -1,0 +1,137 @@
+@import url('https://fonts.cdnfonts.com/css/avenir');
+.filterContainer {
+  
+  font-family: 'Avenir', sans-serif; 
+    display: flex;
+    flex-direction: column;  
+    padding: 10px 20px;
+    border: 0;
+    text-decoration: none;
+    border-radius: 5px; 
+    border: 1px solid rgb(146, 37, 173);
+    backdrop-filter: blur(2px);
+    color:#EEC34E;
+    font-size: 14px;
+ 
+    cursor: pointer;
+    text-transform: uppercase;
+    width: auto;
+    text-align: center;
+    height: auto;   
+  
+}
+
+.filterContainer section select {
+  margin: 12px;
+  height: 25px;
+  font-size: 14px;
+  border: 1px solid rgba(87, 54, 16, 0.9);
+  border-radius: 5px;
+  background-color: #FFF7D4;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  height: 30px;
+  width: 90%;
+  color: #ffdca8;
+
+  border-radius: 10px;
+  border-color: rgb(146, 37, 173);
+  scroll-snap-align: start;
+  margin: 12px 0 12px;
+  transition: 0.5s ease;
+}
+
+.section input{
+  color:#EEC34E;    
+  font-family: 'Avenir', sans-serif; 
+  border-color: rgb(146, 37, 173);
+}
+
+
+.section:hover{
+  height: 200px;
+}
+
+.section section {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+.filterContainer span {
+  margin-top: 9px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #EEC34E;
+}
+.section span {
+  font-size: 12px;
+  margin-left: 5px;
+}
+.section div {
+  display: flex;
+  align-items: center;
+}
+input[type="checkbox"] {
+  width: 15px;
+  margin: 0px;
+  cursor: pointer;
+}
+
+.searchTemp {
+  width: 100%;
+  margin: 0px;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.section section::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width:15px;
+  background-color: rgb(230, 196, 152);
+  border-radius: 10px;
+}
+
+.section section::-webkit-scrollbar-thumb {
+  background-color: #EEC34E;
+  border-radius: 20px;
+  border: 2px solid #f1f2f3;
+  height: 30px;
+}
+.selectFilter {
+  margin: 12px;
+  height: 25px;
+}
+
+.reset {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #EEC34E;
+  border: 0px;
+  height: 25px;
+  width: 25px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-left: 2px;
+  transition: 0.5s ease;
+}
+
+.reset:hover {
+  background-color:#EEC34E;
+}
+.btnReset{
+  border-style: solid;
+  border-color: #CE4293;
+  padding: 0;
+
+}
+
+@media (min-width: 768px) {
+  .filterContainer {
+    width: 185px;
+  }
+}
