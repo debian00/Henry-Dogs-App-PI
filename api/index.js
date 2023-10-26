@@ -10,7 +10,7 @@ conn.sync({ alter: true }).then(() => {
   server.listen(PORT, () => {
     getAllTemperaments();
     console.log(`server listening at port ${PORT}...`);
-  });
+  }); 
 });
 
 
