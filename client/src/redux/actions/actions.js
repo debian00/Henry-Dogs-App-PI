@@ -6,7 +6,7 @@ export const details = (detailID) => {
   return async (dispatch) => {
     try {
 // Realizamos una solicitud HTTP GET para obtener los detalles del perro
-      const { data } = await axios(`https:henry-dogs-app-pi-production.up.railway.app/dogs/${detailID}`);
+      const { data } = await axios(`https://henry-dogs-app-pi-production.up.railway.app/dogs/${detailID}`);
 // Despachamos una acción con el tipo "DETAILS" y los detalles del perro como payload
       dispatch({
         type: ActionTypes.DETAILS,
@@ -65,7 +65,7 @@ export const postDog = (dog) => {
   return async (dispatch) => {
     try {
 // Realizamos una solicitud HTTP POST para agregar un nuevo perro
-      const { data } = await axios.post(`https:henry-dogs-app-pi-production.up.railway.app/dogs`, dog);
+      const { data } = await axios.post(`https://henry-dogs-app-pi-production.up.railway.app/dogs`, dog);
 // Despachamos una acción con el tipo "POST_DOG" y los datos del nuevo perro como payload
       dispatch({
         type: ActionTypes.POST_DOG,
@@ -80,7 +80,7 @@ export const postDog = (dog) => {
 export const getAllBreeds = () => {
   return async (dispatch) => {   
 // Realizamos una solicitud para obtener todas las razas de perros desde la API
-    const { data } = await axios.get("https:henry-dogs-app-pi-production.up.railway.app/dogs");
+    const { data } = await axios.get("https://henry-dogs-app-pi-production.up.railway.app/dogs");
 // Despachamos una acción con el tipo "GET_ALL_DOGS" y los datos de las razas como payload
     dispatch({
       type: ActionTypes.GET_ALL_DOGS,
@@ -93,7 +93,7 @@ export const getByBreed = (breed) => {
   return async (dispatch) => {
     try {
 // Realizar una solicitud para obtener los perros por la raza especificada
-      const { data } = await axios(`https:henry-dogs-app-pi-production.up.railway.app/dogs?name=${breed}`);
+      const { data } = await axios(`https://henry-dogs-app-pi-production.up.railway.app/dogs?name=${breed}`);
   // Verificar si no se encontraron resultados
       if (data.length === 0) {
         alert("No se encontró la raza especificada")
@@ -113,7 +113,7 @@ export const getByBreed = (breed) => {
 export const getTemperaments = () => {
   return async (dispatch) => {
 // Realizamos una solicitud para obtener todos los temperamentos desde la API
-    const { data } = await axios("https:henry-dogs-app-pi-production.up.railway.app/temperaments");
+    const { data } = await axios("https://henry-dogs-app-pi-production.up.railway.app/temperaments");
 // Despachamos una acción y los datos de los temperamentos como payload
     dispatch({
       type: ActionTypes.GET_TEMPERAMENTS,
